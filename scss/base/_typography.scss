@@ -1,0 +1,25 @@
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.card-text, li {
+  font-family: 'Raleway', sans-serif;
+}
+
+.my-name, .profession, hr {
+  color: $light;
+  font-family: 'Oswald', sans-serif;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+

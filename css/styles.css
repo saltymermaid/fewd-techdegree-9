@@ -1,0 +1,123 @@
+/* ============================================= */
+/*                  Colors                       */
+/* ============================================= */
+/* ============================================= */
+/*              Other Variables                  */
+/* ============================================= */
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+.card-text, li {
+  font-family: "Raleway", sans-serif;
+}
+
+.my-name, .profession, hr {
+  color: #fbfffe;
+  font-family: "Oswald", sans-serif;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+* {
+  font-family: "Lato", sans-serif;
+  color: #27272A;
+  box-sizing: border-box;
+}
+
+/* ============================================= */
+/*              Layout                      */
+/* ============================================= */
+html {
+  position: relative;
+}
+
+body, html {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  /* The image used */
+  background-image: linear-gradient(rgba(233, 218, 78, 0.8), rgba(236, 127, 158, 0.8), rgba(210, 56, 108, 0.8)), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.skills {
+  padding: 20px 0;
+}
+
+#sticky-div {
+  position: sticky;
+  top: 0;
+  font-size: 30px;
+  color: white;
+  background-color: #3991bd;
+}
+
+p {
+  font-size: 20px;
+}
+
+#description {
+  background-color: #6ccde6;
+  width: 75%;
+}
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+.gh-logo {
+  height: 40px;
+  width: auto;
+}
+
+.gh-path {
+  fill: #D2386C;
+}
+
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media only screen and (max-device-width: 1366px) {
+  .parallax, .parallax-2, .navbar {
+    background-attachment: scroll;
+  }
+}
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+/*# sourceMappingURL=styles.css.map */

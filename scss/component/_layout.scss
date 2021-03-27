@@ -1,0 +1,73 @@
+/* ============================================= */
+/*              Layout                      */
+/* ============================================= */
+
+html {
+  position: relative;
+}
+
+// body {
+//   max-width: 1000px;
+//   margin: 0 auto;
+//   width: 95%;
+// }
+
+// .container {
+//   background-color: $color-6;
+// }
+
+body, html {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.parallax {
+  /* The image used */
+  // background-image: url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
+  // background-color: $color-3;
+  background-image: linear-gradient($color-1-trans, $color-2-trans, $color-3-trans), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+.skills {
+  padding: 20px 0;
+}
+
+#sticky-div {
+  position : sticky;
+  top :0;
+  font-size: 30px;
+  color: white;
+  background-color:  #3991bd;
+}
+
+p {
+  font-size: 20px;
+}
+ 
+#description {
+  background-color: #6ccde6;
+  width : 75%
+}
