@@ -15,6 +15,10 @@ h5 {
   font-family: "Oswald", sans-serif;
 }
 
+p {
+  font-size: 20px;
+}
+
 .card-text, li {
   font-family: "Raleway", sans-serif;
 }
@@ -64,40 +68,40 @@ h5 {
   color: #fbfffe;
 }
 
-.proj-1 {
+.proj-1, .skill-proj-1 .badge {
   background-color: #E9DA4E;
 }
 
-.proj-2 {
+.proj-2, .skill-proj-2 .badge {
   background-color: #EC7F9E;
 }
 
-.proj-3 {
+.proj-3, .skill-proj-3 .badge {
   background-color: #D2386C;
 }
 
-.proj-4 {
+.proj-4, .skill-proj-4 .badge {
   background-color: #3CADD4;
 }
 
-.proj-5 {
+.proj-5, .skill-proj-5 .badge {
   background-color: #64BFA3;
 }
 
-.proj-6 {
+.proj-6, .skill-proj-6 .badge {
   background-color: #f8b87c;
 }
 
-.proj-7 {
+.proj-7, .skill-proj-7 .badge {
   background-color: #C3D263;
 }
 
-.proj-8 {
+.proj-8, .skill-proj-8 .badge {
   background-color: #919BC8;
 }
 
 .project-bubble:hover {
-  animation: bounce 1s ease-in-out;
+  animation: bounce 2s ease-in;
 }
 
 @keyframes bounce {
@@ -142,14 +146,9 @@ img {
   height: auto;
 }
 
-.parallax {
-  background-image: linear-gradient(rgba(233, 218, 78, 0.8), rgba(236, 127, 158, 0.8), rgba(210, 56, 108, 0.8)), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
-  /* Full height */
+.back-image {
+  background-image: linear-gradient(rgba(233, 218, 78, 0.8), rgba(236, 127, 158, 0.8), rgba(210, 56, 108, 0.8)), url("../images/white-pokey-things.jpg");
   height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -164,31 +163,23 @@ img {
   justify-content: flex-start;
 }
 
-.card-text {
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-row {
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
 }
 
 .skills {
-  padding: 20px 0;
+  display: flex;
 }
 
-#sticky-div {
-  position: sticky;
-  top: 0;
-  font-size: 30px;
-  color: white;
-  background-color: #3991bd;
-}
-
-p {
-  font-size: 20px;
-}
-
-#description {
-  background-color: #6ccde6;
-  width: 75%;
+.skills .badge {
+  margin: 0 10px;
+  height: 1.2rem;
 }
 
 /* ============================================= */
@@ -199,8 +190,41 @@ p {
   width: auto;
 }
 
-.gh-path {
+.logo-proj-1 .gh-path {
+  fill: #E9DA4E;
+}
+
+.logo-proj-2 .gh-path {
+  fill: #EC7F9E;
+}
+
+.logo-proj-3 .gh-path {
   fill: #D2386C;
+}
+
+.logo-proj-4 .gh-path {
+  fill: #3CADD4;
+}
+
+.logo-proj-5 .gh-path {
+  fill: #64BFA3;
+}
+
+.logo-proj-6 .gh-path {
+  fill: #f8b87c;
+}
+
+.logo-proj-7 .gh-path {
+  fill: #C3D263;
+}
+
+.logo-proj-8 .gh-path {
+  fill: #919BC8;
+}
+
+.modal img {
+  width: 100%;
+  padding: 10px;
 }
 
 /* ============================================= */
@@ -211,6 +235,64 @@ p {
     background-attachment: scroll;
   }
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(38, 48, 46, 0.4);
+}
+
+.modal {
+  width: 70vw;
+  display: block;
+  margin: 15%;
+  position: relative;
+  text-align: center;
+  border-radius: 2%;
+  padding: 30px 20px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  text-align: left;
+}
+
+.modal img {
+  align-self: center;
+  width: 50%;
+}
+
+hr {
+  width: 95%;
+}
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.modal-prev,
+.modal-next {
+  position: absolute;
+  top: 50%;
+}
+
+.modal-prev {
+  left: 5px;
+}
+
+.modal-next {
+  right: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */

@@ -1,0 +1,57 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $background-modal;
+}
+
+.modal {
+  width: 70vw;
+  display: block;
+  margin: 15%;
+  position: relative;
+  text-align: center;
+  border-radius: 2%;
+  padding: 30px 20px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  text-align: left;
+}
+
+.modal img {
+  align-self: center;
+  width: 50%;
+}
+
+hr {
+  width: 95%;
+}
+
+.modal-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.modal-prev,
+.modal-next {
+  position: absolute;
+  top: 50%;
+}
+
+.modal-prev {
+  left: 5px;
+}
+
+.modal-next {
+  right: 5px;
+}
+
+.hidden {
+  display: none;
+}

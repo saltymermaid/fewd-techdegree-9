@@ -15,16 +15,9 @@ img {
   height: auto;
 }
 
-.parallax {
-  background-image: linear-gradient($color-1-trans, $color-2-trans, $color-3-trans), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
-
-  /* Full height */
+.back-image {
+  background-image: linear-gradient($color-1-trans, $color-2-trans, $color-3-trans), url("../images/white-pokey-things.jpg");
   height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -39,29 +32,22 @@ img {
   justify-content: flex-start;
 }
 
-.card-text {
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-row {
+  // grid-area: skills;
   display: flex;
   justify-content: space-between;
-  vertical-align: middle;
 }
 
 .skills {
-  padding: 20px 0;
+  display: flex;
 }
 
-#sticky-div {
-  position : sticky;
-  top :0;
-  font-size: 30px;
-  color: white;
-  background-color:  #3991bd;
-}
-
-p {
-  font-size: 20px;
-}
- 
-#description {
-  background-color: #6ccde6;
-  width : 75%
+.skills .badge {
+  margin: 0 10px;
+  height: 1.2rem;
 }

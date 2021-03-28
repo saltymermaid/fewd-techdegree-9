@@ -17,13 +17,13 @@
 }
 
 @for $i from 1 through 8 {
-  .proj-#{$i} {
+  .proj-#{$i}, .skill-proj-#{$i} .badge {
     background-color: nth($bubble-colors, $i);
   }
 }
 
 .project-bubble:hover {
-  animation: bounce 1s ease-in-out;
+  animation: bounce 2s ease-in;
 }
 
 @keyframes bounce {
