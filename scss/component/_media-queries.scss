@@ -10,6 +10,10 @@
     top: 40%;
     font-size: $font-m;
   }
+
+  .skills .badge {
+    margin: 0 10px;
+  }
 }
 
 @media (min-width: $screen-break-lg) {
