@@ -1,7 +1,19 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: $screen-break) {
+@media (min-width: $screen-break-sm) {
+  .project-modal {
+    width: 75%;
+  }
 
+  .project-bubble > p {
+    top: 40%;
+    font-size: $font-m;
+  }
 }
 
+@media (min-width: $screen-break-lg) {
+  .project-modal {
+    width: 50%;
+  }
+}

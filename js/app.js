@@ -44,14 +44,15 @@ function createModal(index, grandparent, parentClass, modal=false) {
   const project = projectList[index - 1]
   const parent = createAndAddToElement('div', 'class', parentClass, grandparent)
   parent.setAttribute('data-index', index)
+  createWithTextAndAddToElement('h2', project.title, 'title p-4', parent)
   const photo = createLinkAndAddToElement(project.url, 'proj-link', parent)
   createAndAddToElement('img', 'src', project.image, photo)
   photo.setAttribute('class', 'projectImage')
   const textContainer = createAndAddToElement('div', 'class', 'text-container', parent)
-  createWithTextAndAddToElement('p', project.description, 'description', textContainer)
+  createWithTextAndAddToElement('p', project.description, 'description px-4 py-2', textContainer)
   const list = createAndAddToElement('ul', 'class', 'topics', textContainer)
   project.topics.forEach(topic => {
-    createWithTextAndAddToElement('li', topic, 'topic', list)
+    createWithTextAndAddToElement('li', topic, 'topic px-7', list)
   })
   const bottomRow = createAndAddToElement('div', 'class', 'bottom-row', parent)
   const skills = createAndAddToElement('ul', 'class', `skills skill-proj-${index}`, bottomRow)
@@ -75,8 +76,8 @@ function displayModal(index) {
 
 function displayModalNav(index) {
   const size = projectList.length;
-  if (index === size - 1) modalNext.classList.add("hidden");
-  if (index === 0) modalPrev.classList.add("hidden");
+  if (index === size) modalNext.classList.add("hidden");
+  if (index === 1) modalPrev.classList.add("hidden");
 }
 
 bubbleContainer.addEventListener('click', e => {
@@ -97,18 +98,14 @@ overlay.addEventListener('click', (e) => {
   }
 });
 
-// modalNav.addEventListener('click', (e) => {
-//   const employeeIndex = document.querySelector('.modal-content');
-//   displayModalNav(parseInt(employeeIndex.dataset.index));
-//   if (e.target === modalNext) {
-//     const nextEmployee = parseInt(employeeIndex.dataset.index) + 1;
-//     if (nextEmployee < filteredEmployees.length) {
-//       displayModal(nextEmployee);
-//     };
-//   } else if (e.target === modalPrev) {
-//     const prevEmployee = parseInt(employeeIndex.dataset.index) - 1;
-//     if (prevEmployee >= 0) {
-//       displayModal(prevEmployee);
-//     };
-//   }
-// });
+modalNav.addEventListener('click', (e) => {
+  const projectModal = document.querySelector('.proj-modal-content');
+  displayModalNav(parseInt(projectModal.dataset.index));
+  if (e.target === modalNext) {
+    const nextEmployee = parseInt(projectModal.dataset.index) + 1;
+    displayModal(nextEmployee);
+  } else if (e.target === modalPrev) {
+    const prevEmployee = parseInt(projectModal.dataset.index) - 1;
+    displayModal(prevEmployee);
+  }
+});

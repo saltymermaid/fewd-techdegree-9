@@ -6,10 +6,7 @@ $main-text: #27272A;
 $light-text: #8c9996;
 $background: #f3faf8;
 $background-modal: rgba(38, 48, 46, 0.4);
-$accent-light: #B4DDD5;
-$accent-dark: #7FB6AC;
 $light: #fbfffe;
-$bright: #00AA92;
 // $color-1: #7AB53F;
 // $color-2: #B52561;
 // $color-3: #FFAC4F;
@@ -26,27 +23,28 @@ $color-3: #D2386C;
 $color-3-trans: rgb(210, 56, 108, 0.8);
 $color-4: #3CADD4;
 $color-5: #64BFA3;
-$color-6: #F4EEE8;
+$color-6: #F8b87c;
 $color-7: #C3D263;
 $color-8: #919BC8;
 
 $bubble-colors:
-  #E9DA4E,
-  #EC7F9E,
-  #D2386C,
-  #3CADD4,
-  #64BFA3,
-  #f8b87c,
-  #C3D263,
-  #919BC8;
+  $color-1,
+  $color-2,
+  $color-3,
+  $color-4,
+  $color-5,
+  $color-6,
+  $color-7,
+  $color-8;
 
 
 /* ============================================= */
 /*              Other Variables                  */
 /* ============================================= */
 
-$screen-break: 768px;
+$screen-break-sm: 768px;
+$screen-break-lg: 1024px;
 $font-xl: 40px;
 $font-l: 30px;
 $font-m: 17px;
-$font-s: 12px;
+$font-s: 15px;

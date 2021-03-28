@@ -6,17 +6,17 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-h5 {
+h2, h5 {
   font-family: 'Oswald', sans-serif;
 }
 
-
 p {
-  font-size: 20px;
+  font-size: $font-s;
 }
 
 .card-text, li {
   font-family: 'Raleway', sans-serif;
+  font-size: $font-s;
 }
 
 .my-name, .profession, hr {
@@ -25,15 +25,15 @@ p {
   @include words-shadow;
 }
 
-.strike {
-  text-decoration: line-through;
-}
-
 .project-bubble p {
   color: $color-3;
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   font-size: 1.2rem;
   @include words-shadow;
+}
+
+.description, .topic {
+  font-family: 'Raleway', sans-serif;
 }
 

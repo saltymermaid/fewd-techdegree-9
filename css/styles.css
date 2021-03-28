@@ -11,16 +11,17 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-h5 {
+h2, h5 {
   font-family: "Oswald", sans-serif;
 }
 
 p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .card-text, li {
   font-family: "Raleway", sans-serif;
+  font-size: 15px;
 }
 
 .my-name, .profession, hr {
@@ -29,16 +30,16 @@ p {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-.strike {
-  text-decoration: line-through;
-}
-
 .project-bubble p {
   color: #D2386C;
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   font-size: 1.2rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.description, .topic {
+  font-family: "Raleway", sans-serif;
 }
 
 /* ============================================= */
@@ -52,8 +53,12 @@ p {
 
 .project-bubble {
   background-color: #fbfffe;
-  width: 200px;
-  height: 200px;
+  max-width: 150px;
+  min-width: 100px;
+  max-height: 150px;
+  min-height: 100px;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   margin: 5px;
   position: relative;
@@ -63,9 +68,10 @@ p {
 .project-bubble > p {
   position: absolute;
   width: 100%;
-  top: 80px;
+  top: 40%;
   left: 0;
   color: #fbfffe;
+  font-size: 15px;
 }
 
 .proj-1, .skill-proj-1 .badge {
@@ -89,7 +95,7 @@ p {
 }
 
 .proj-6, .skill-proj-6 .badge {
-  background-color: #f8b87c;
+  background-color: #F8b87c;
 }
 
 .proj-7, .skill-proj-7 .badge {
@@ -152,10 +158,6 @@ html {
   position: relative;
 }
 
-body, html {
-  height: 100%;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -163,13 +165,22 @@ img {
 
 .back-image {
   background-image: linear-gradient(rgba(233, 218, 78, 0.8), rgba(236, 127, 158, 0.8), rgba(210, 56, 108, 0.8)), url("../images/white-pokey-things.jpg");
-  height: 100%;
+  min-height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
+}
+
+.jumbotron {
+  padding-top: 15vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-list {
@@ -182,6 +193,10 @@ img {
 .proj-modal-content {
   display: flex;
   flex-direction: column;
+}
+
+.description, .topics {
+  text-align: left;
 }
 
 .bottom-row {
@@ -227,7 +242,7 @@ img {
 }
 
 .logo-proj-6 .gh-path {
-  fill: #f8b87c;
+  fill: #F8b87c;
 }
 
 .logo-proj-7 .gh-path {
@@ -238,14 +253,21 @@ img {
   fill: #919BC8;
 }
 
-.projemodal img {
+.project-modal img {
   width: 100%;
   padding: 10px;
 }
 
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
+.contact path {
+  fill: #D2386C;
+}
+
+.contact svg {
+  margin: 20px;
+  height: 35px;
+  width: auto;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -256,14 +278,14 @@ img {
 }
 
 .project-modal {
-  width: 50vw;
+  width: 95%;
   display: block;
-  margin: 5% auto;
+  margin: 3% auto;
   position: relative;
   text-align: center;
   border-radius: 5px;
   padding: 30px 20px;
-  background-color: #fbfffe;
+  background-color: #faf6d6;
 }
 
 .modal-content {
@@ -276,10 +298,6 @@ img {
   align-self: center;
   width: 50%;
   border-radius: 5px;
-}
-
-hr {
-  width: 95%;
 }
 
 .modal-close {
@@ -309,5 +327,23 @@ hr {
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@media (min-width: 768px) {
+  .project-modal {
+    width: 75%;
+  }
+
+  .project-bubble > p {
+    top: 40%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 1024px) {
+  .project-modal {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,10 +6,6 @@ html {
   position: relative;
 }
 
-body, html {
-  height: 100%;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -17,13 +13,22 @@ img {
 
 .back-image {
   background-image: linear-gradient($color-1-trans, $color-2-trans, $color-3-trans), url("../images/white-pokey-things.jpg");
-  height: 100%;
+  min-height: 100vh;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
+}
+
+.jumbotron {
+  padding-top: 15vh;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-list {
@@ -38,8 +43,11 @@ img {
   flex-direction: column;
 }
 
+.description, .topics {
+  text-align: left;
+}
+
 .bottom-row {
-  // grid-area: skills;
   display: flex;
   justify-content: space-between;
 }

@@ -21,7 +21,7 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-2',
     url: 'https://saltymermaid.github.io/fewd-techdegree-2/',
     image: 'images/proj-2-responsive-portfolio.png',
-    description: 'This was my first introduction to responsive design and a mobile-first approach. This project was completed with only basic CSS - we were not meant to use flex-box or CSS grid. For the project, I was given three mockups of the design for mobile, tablet, and desktop screens as well as the images and text. Things I learned:',
+    description: 'This was my first introduction to responsive design and a mobile-first approach. This project was completed with only basic CSS - we were not meant to use flex-box or CSS grid. For the project, I was given three mockups of the design for mobile, tablet, and desktop screens as well as the images and text.',
     topics: [
       'Designing with a mobile-first approach',
       'Creating a responsive layout with media queries',
@@ -56,7 +56,7 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-4',
     url: 'https://saltymermaid.github.io/fewd-techdegree-4/',
     image: 'images/proj-4-web-style-guide.png',
-    description: 'This was the Hello, World project for the program. I was given a complete profile page and the assignment was to update it with my own text and images. For extra credit, I add things like additional pages and a CSS transition.',
+    description: 'This project was all about learning Sass. I started with a fully designed webpage and stylesheet and organized the styles into a directory of partials. I also learned to implement a lot of the Sass goodies like variables and mixins.',
     topics: [
       'Implementing Sass variables',
       'Nesting CSS Selectors',
@@ -79,7 +79,7 @@ const projectList = [
     description: 'For the Photo Gallery project, I used a lightbox plug-in, baguetteBox. A search box was required - for extra credit I made it from scratch.',
     topics: [
       'Creating a search to filter images based on captions',
-      'Introduction to CSS Grid',
+      'Using CSS grid for responsive design',
       'Implementing a Javascript plugin',
       'Updating HTML with Javascript (to hide filtered images)'
     ],
@@ -95,7 +95,7 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-6',
     url: 'https://saltymermaid.github.io/fewd-techdegree-6/',
     image: 'images/proj-6-wheel-of-success.png',
-    description: 'For this project, I was given the HTML and CSS and needed to add the Javascript to make the game work. This was my first experience with adding, removing, and changing elements via Javascript. Things I learned:',
+    description: 'For this project, I was given the HTML and CSS and needed to add the Javascript to make the game work. This was my first experience with adding, removing, and changing elements via Javascript.',
     topics: [
       'Finding elements with CSS selectors',
       'Modifying HTML element attributes via Javascript',
@@ -114,15 +114,13 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-7',
     url: 'https://saltymermaid.github.io/fewd-techdegree-7/',
     image: 'images/proj-7-webapp-dashboard.png',
-    description: 'This was the hardest and most time-consuming project for me. The page design required creating many different elements - from charts to social media widgets to messages and toggles - each one with its own complexities. The actual charts use chart.js, but everything else is homemade. I learned so much working on this page. I expect to generally use a library for many of these elements in the future, but it was a great experience to code them from scratch one time:',
+    description: 'This was the hardest and most time-consuming project for me. The page design required creating many different elements - from charts to social media widgets to messages and toggles - each one with its own complexities. The actual charts use chart.js, but everything else is homemade. While I expect to generally use a library for many of these elements in the future, it was a great experience to code them from scratch one time.',
     topics: [
       'Creating an auto-complete search box',
-      'Creating toggle switches',
       'Saving to local storage (Settings section) ',
       'Changing the color of SVG files',
       'Creating an alert on the page',
       'Using keyframes to animate an element (see the bell) ',
-      'Using CSS grid for responsive design'
     ],
     skills: [
       'HTML',
@@ -137,7 +135,7 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-8',
     url: 'https://saltymermaid.github.io/fewd-techdegree-8/',
     image: 'images/proj-8-api-employee-directory.png',
-    description: "Following the intense dashboard project, this project was a fun reprieve. I used a random user generator at https://randomuser.me/. While I didn't learn many new concepts in this project, I gained more experience with CSS and Javascript. Things I learned:",
+    description: "Following the intense dashboard project, this project was a fun reprieve. I used a random user generator at https://randomuser.me/. While there weren't a lot of new concepts introduced in this project, I gained more experience with CSS and Javascript.",
     topics: [
       'Creating a modal from scratch',
       'Filtering transient data and then using that data to navigate through the filtered users in the modal'
