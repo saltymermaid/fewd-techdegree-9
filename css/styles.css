@@ -22,10 +22,19 @@ h5 {
 .my-name, .profession, hr {
   color: #fbfffe;
   font-family: "Oswald", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .strike {
   text-decoration: line-through;
+}
+
+.project-bubble p {
+  color: #D2386C;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* ============================================= */
@@ -37,6 +46,86 @@ h5 {
   box-sizing: border-box;
 }
 
+.project-bubble {
+  background-color: #fbfffe;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.project-bubble > p {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  color: #fbfffe;
+}
+
+.proj-1 {
+  background-color: #E9DA4E;
+}
+
+.proj-2 {
+  background-color: #EC7F9E;
+}
+
+.proj-3 {
+  background-color: #D2386C;
+}
+
+.proj-4 {
+  background-color: #3CADD4;
+}
+
+.proj-5 {
+  background-color: #64BFA3;
+}
+
+.proj-6 {
+  background-color: #f8b87c;
+}
+
+.proj-7 {
+  background-color: #C3D263;
+}
+
+.proj-8 {
+  background-color: #919BC8;
+}
+
+.project-bubble:hover {
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  15% {
+    transform: translate(0px, -50px);
+  }
+  30% {
+    transform: translate(0px, 30px);
+  }
+  45% {
+    transform: translate(0px, -40px);
+  }
+  60% {
+    transform: translate(0px, 20px);
+  }
+  75% {
+    transform: translate(0px, -30px);
+  }
+  90% {
+    transform: translate(0px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
 /* ============================================= */
 /*              Layout                      */
 /* ============================================= */
@@ -54,7 +143,6 @@ img {
 }
 
 .parallax {
-  /* The image used */
   background-image: linear-gradient(rgba(233, 218, 78, 0.8), rgba(236, 127, 158, 0.8), rgba(210, 56, 108, 0.8)), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
   /* Full height */
   height: 100%;
@@ -64,9 +152,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0;
+}
+
+.project-list {
+  display: flex;
+  flex: 0 300px;
+  justify-content: flex-start;
 }
 
 .card-text {

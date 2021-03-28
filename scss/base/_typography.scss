@@ -17,9 +17,18 @@ h5 {
 .my-name, .profession, hr {
   color: $light;
   font-family: 'Oswald', sans-serif;
+  @include words-shadow;
 }
 
 .strike {
   text-decoration: line-through;
+}
+
+.project-bubble p {
+  color: $color-3;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  @include words-shadow;
 }
 

@@ -6,16 +6,6 @@ html {
   position: relative;
 }
 
-// body {
-//   max-width: 1000px;
-//   margin: 0 auto;
-//   width: 95%;
-// }
-
-// .container {
-//   background-color: $color-6;
-// }
-
 body, html {
   height: 100%;
 }
@@ -26,9 +16,6 @@ img {
 }
 
 .parallax {
-  /* The image used */
-  // background-image: url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
-  // background-color: $color-3;
   background-image: linear-gradient($color-1-trans, $color-2-trans, $color-3-trans), url("/Users/melissablades/Documents/team-treehouse/front-end-web-dev-tech-degree/unit-9/fewd-techdegree-9/images/white-pokey-things.jpg");
 
   /* Full height */
@@ -40,9 +27,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0;
+}
+
+.project-list {
+  display: flex;
+  flex: 0 300px;
+  justify-content: flex-start;
 }
 
 .card-text {
