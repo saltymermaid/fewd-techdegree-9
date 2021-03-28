@@ -22,6 +22,10 @@
   .project-list {
     width: 50%;
   }
+
+  hr, .about {
+    width: 50%;
+  }
 }
 
 @media (min-width: $screen-break-lg) {
