@@ -7,14 +7,15 @@
   background: $background-modal;
 }
 
-.modal {
-  width: 70vw;
+.project-modal {
+  width: 50vw;
   display: block;
-  margin: 15%;
+  margin: 5% auto;
   position: relative;
   text-align: center;
-  border-radius: 2%;
+  border-radius: 5px;
   padding: 30px 20px;
+  background-color: $light;
 }
 
 .modal-content {
@@ -23,9 +24,10 @@
   text-align: left;
 }
 
-.modal img {
+.project-modal img {
   align-self: center;
   width: 50%;
+  border-radius: 5px;
 }
 
 hr {

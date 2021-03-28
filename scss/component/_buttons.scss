@@ -23,30 +23,45 @@
 }
 
 .project-bubble:hover {
-  animation: bounce 2s ease-in;
+  animation: bounce 1.5s ease-in;
 }
 
 @keyframes bounce {
   0% {
     transform: translate(0px, 0px);
   }
-  15% {
+  8% {
     transform: translate(0px, -50px);
   }
-  30% {
+  16% {
     transform: translate(0px, 30px);
   }
-  45% {
+  25% {
     transform: translate(0px, -40px);
   }
-  60% {
+  33% {
     transform: translate(0px, 20px);
   }
-  75% {
-    transform: translate(0px, -30px);
+  41% {
+    transform: translate(0px, -25px);
   }
-  90% {
+  50% {
     transform: translate(0px, 10px);
+  }
+  58% {
+    transform: translate(0px, -15px);
+  }
+  66% {
+    transform: translate(0px, 7px);
+  }
+  75% {
+    transform: translate(0px, -5px);
+  }
+  83% {
+    transform: translate(0px, 3px);
+  }
+  91% {
+    transform: translate(0px, -2px);
   }
   100% {
     transform: translate(0px, 0px);

@@ -114,7 +114,7 @@ const projectList = [
     github: 'https://github.com/saltymermaid/fewd-techdegree-7',
     url: 'https://saltymermaid.github.io/fewd-techdegree-7/',
     image: 'images/proj-7-webapp-dashboard.png',
-    description: 'This was the hardest and most time-consuming project for me. The page design required creating many different elements - from charts to social media widgets to messages and toggles - each one with its own complexities. The actual charts use chart.js, but everything else is homemade. I learned so much working on this page. I will probably always use a library for many of these elements in the future, but it was a great experience to code them from scratch one time:',
+    description: 'This was the hardest and most time-consuming project for me. The page design required creating many different elements - from charts to social media widgets to messages and toggles - each one with its own complexities. The actual charts use chart.js, but everything else is homemade. I learned so much working on this page. I expect to generally use a library for many of these elements in the future, but it was a great experience to code them from scratch one time:',
     topics: [
       'Creating an auto-complete search box',
       'Creating toggle switches',

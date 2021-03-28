@@ -28,11 +28,12 @@ img {
 
 .project-list {
   display: flex;
+  flex-wrap: wrap;
   flex: 0 300px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.modal-content {
+.proj-modal-content {
   display: flex;
   flex-direction: column;
 }

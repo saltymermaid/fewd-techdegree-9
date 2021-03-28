@@ -24,7 +24,7 @@ function createLinkAndAddToElement(link, classy, adult) {
 
 const bubbleContainer = document.querySelector(".project-list");
 const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
+const modal = document.querySelector(".project-modal");
 const modalClose = document.querySelector(".modal-close");
 const modalNav = document.querySelector(".modal-nav");
 const modalNext = document.querySelector(".modal-next");
@@ -66,9 +66,9 @@ function createModal(index, grandparent, parentClass, modal=false) {
 function displayModal(index) {
   const navButtons = Array.from(modalNav.children);
   navButtons.forEach(button => button.classList.remove("hidden"));
-  const deleteModal = modal.querySelector('.modal-content');
+  const deleteModal = modal.querySelector('.proj-modal-content');
   if (deleteModal) modal.removeChild(deleteModal);
-  createModal(index, modal, 'modal-content', true)
+  createModal(index, modal, 'proj-modal-content', true)
   displayModalNav(index);
   overlay.classList.remove("hidden");
 }
