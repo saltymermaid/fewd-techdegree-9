@@ -10,6 +10,8 @@
   margin: 5px;
   position: relative;
   text-align: center;
+  animation-name: drop, bounce;
+  animation-timing-function: ease-in, ease-out;
 }
 
 .project-bubble > p {
@@ -27,8 +29,13 @@
   }
 }
 
-.project-bubble:hover {
-  animation: bounce 1.5s ease-in;
+@keyframes drop {
+  0% {
+    transform: translate(0px, -1000px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }
 
 @keyframes bounce {

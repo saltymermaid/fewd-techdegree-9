@@ -32,8 +32,11 @@ const modalPrev = document.querySelector(".modal-prev");
 
 function createBubbles() {
   for (let i = 1; i < 9; i ++) {
+    const randomDuration = Math.floor(Math.random() * 1000)
     const bubble = createAndAddToElement('div', 'class', `project-bubble proj-${i}`, bubbleContainer)
     bubble.setAttribute('data-index', i)
+    bubble.style.setProperty('animation-duration', `${randomDuration}ms, 2s`)
+    bubble.style.setProperty('animation-delay', `0s, ${randomDuration}ms`)
     createWithTextAndAddToElement('p', projectList[i-1].name, 'bubble-text', bubble)
   }
 }
