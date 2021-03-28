@@ -4,8 +4,8 @@
   min-width: 100px;
   max-height: 150px;
   min-height: 100px;
-  width: 20vw;
-  height: 20vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   margin: 5px;
   position: relative;
@@ -20,7 +20,7 @@
   top: 40%;
   left: 0;
   color: $light;
-  font-size: $font-s;
+  font-size: 13px;
 }
 
 @for $i from 1 through 8 {

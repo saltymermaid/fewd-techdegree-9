@@ -7,10 +7,18 @@
   width: auto;
 }
 
+.gh-logo:hover {
+  filter: drop-shadow(1px 1px 1px black);
+}
+
 @for $i from 1 through 8 {
   .logo-proj-#{$i} .gh-path {
     fill: nth($bubble-colors, $i);
   }
+}
+
+img:hover {
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .project-modal img {

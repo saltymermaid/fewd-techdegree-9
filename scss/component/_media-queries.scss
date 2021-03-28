@@ -8,16 +8,37 @@
 
   .project-bubble > p {
     top: 40%;
-    font-size: $font-m;
+    font-size: 14px;
   }
 
   .skills .badge {
     margin: 0 10px;
   }
+
+  .jumbotron {
+    padding-top: 10vh;
+  }
+
+  .project-list {
+    width: 50%;
+  }
 }
 
 @media (min-width: $screen-break-lg) {
+  .jumbotron {
+    padding-top: 15vh;
+  }
+
   .project-modal {
     width: 50%;
+  }
+
+  .project-list {
+    width: 90%;
+  }
+
+  .project-bubble > p {
+    top: 35%;
+    font-size: 16px;
   }
 }

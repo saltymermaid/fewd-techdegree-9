@@ -147,4 +147,4 @@ const projectList = [
       'Javascript'
     ]
   }
-]
+];

@@ -26,6 +26,12 @@ p {
   @include words-shadow;
 }
 
+.about {
+  color: $light;
+  font-family: 'Raleway', sans-serif;
+  @include words-shadow;
+}
+
 .project-bubble p {
   color: $color-3;
   font-family: 'Oswald', sans-serif;
