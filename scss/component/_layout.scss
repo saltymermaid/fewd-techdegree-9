@@ -36,6 +36,7 @@ img {
   flex-wrap: wrap;
   flex: 0 300px;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 
 .proj-modal-content {
@@ -49,11 +50,14 @@ img {
 
 .bottom-row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .skills {
   display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .skills .badge {

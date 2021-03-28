@@ -11,7 +11,8 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-h2, h5 {
+h1, h2, h5 {
+  text-align: center;
   font-family: "Oswald", sans-serif;
 }
 
@@ -188,6 +189,7 @@ img {
   flex-wrap: wrap;
   flex: 0 300px;
   justify-content: center;
+  margin-bottom: 10vh;
 }
 
 .proj-modal-content {
@@ -201,11 +203,14 @@ img {
 
 .bottom-row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .skills {
   display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .skills .badge {

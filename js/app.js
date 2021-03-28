@@ -44,12 +44,12 @@ function createModal(index, grandparent, parentClass, modal=false) {
   const project = projectList[index - 1]
   const parent = createAndAddToElement('div', 'class', parentClass, grandparent)
   parent.setAttribute('data-index', index)
-  createWithTextAndAddToElement('h2', project.title, 'title p-4', parent)
+  createWithTextAndAddToElement('h2', project.title, 'title p-1', parent)
   const photo = createLinkAndAddToElement(project.url, 'proj-link', parent)
   createAndAddToElement('img', 'src', project.image, photo)
   photo.setAttribute('class', 'projectImage')
   const textContainer = createAndAddToElement('div', 'class', 'text-container', parent)
-  createWithTextAndAddToElement('p', project.description, 'description px-4 py-2', textContainer)
+  createWithTextAndAddToElement('p', project.description, 'description px-4 py-1', textContainer)
   const list = createAndAddToElement('ul', 'class', 'topics', textContainer)
   project.topics.forEach(topic => {
     createWithTextAndAddToElement('li', topic, 'topic px-7', list)
